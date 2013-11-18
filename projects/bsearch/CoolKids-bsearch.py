@@ -26,31 +26,27 @@ Solutions:
 #          low = testpos+1
 #       else:
 #          high = testpos-1
+
+
 #Glenisha Smith @02679391
 # November 17, 2013
 # SYCS 100
 # Binary Search
 
 
-
+# myList = sorted([67,78,9,67,53,24,23,87])
+# myItem = 9
 def bsearch(myItem, myList):
-	found = False
 	low = 0
-	high = len(myList)-1
-	while low <= high and not found:
+	high = (len(myList)-1)
+	while low <= high:
 		mid = (low + high)//2
 		if myList[mid]== myItem:
-			found = True
+			return mid
 		elif myList[mid] < myItem:
 			low = mid + 1
 		else :
 			high = mid - 1
-	return found
+	return -1
 
-List = sorted([67,78,9,67,53,24,23,87])
-Item = 7
-isitFound = bsearch(Item, List)
-if isitFound:
-	print List.index(Item)
-else:
-	print -1
+#print bsearch(18, [2,5,18])
