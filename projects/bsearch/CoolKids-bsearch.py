@@ -26,6 +26,9 @@ Solutions:
 #          low = testpos+1
 #       else:
 #          high = testpos-1
+
+
+
 #Glenisha Smith @02679391
 # November 17, 2013
 # SYCS 100
